@@ -1,6 +1,6 @@
 # sysproxy
 
-Set the HTTP proxy of the system
+Set the proxy of the system
 
 [![Build Status](https://travis-ci.org/wzshiming/sysproxy.svg?branch=master)](https://travis-ci.org/wzshiming/sysproxy)
 [![Go Report Card](https://goreportcard.com/badge/github.com/wzshiming/sysproxy)](https://goreportcard.com/report/github.com/wzshiming/sysproxy)
