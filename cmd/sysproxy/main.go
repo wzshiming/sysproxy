@@ -33,8 +33,8 @@ Usage:
 	%s no_proxy off
 	%s no_proxy get
 	%s pac on http://127.0.0.1:8080
-	%s https off
-	%s https get
+	%s pac off
+	%s pac get
 `, name, name, name, name, name, name, name, name, name, name, name, name, name))
 	flag.PrintDefaults()
 	os.Exit(1)
