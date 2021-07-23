@@ -6,6 +6,7 @@ import (
 	"io"
 	"net"
 	"net/textproto"
+	"regexp"
 	"strings"
 )
 
@@ -204,11 +205,15 @@ func get(key string, inter string) (string, error) {
 }
 
 func getNetworkInterface() (string, error) {
-	buf, err := command("networksetup", "-listallnetworkservices")
+	buf, err := command("zsh", "-c", "networksetup -listnetworkserviceorder | grep -B 1 $(route -n get default | grep interface | awk '{print $2}')")
 	if err != nil {
 		return "", err
 	}
 	reader := textproto.NewReader(bufio.NewReader(bytes.NewBufferString(buf)))
-	reader.ReadLine()
-	return reader.ReadLine()
+	reg := regexp.MustCompile(`^\(\d+\)\s(.*)$`)
+	device, err := reader.ReadLine()
+	if err != nil {
+		return "", err
+	}
+	return reg.FindStringSubmatch(device)[1], nil
 }
