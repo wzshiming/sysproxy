@@ -3,6 +3,7 @@ package sysproxy
 import (
 	"bufio"
 	"bytes"
+	"fmt"
 	"io"
 	"net"
 	"net/textproto"
