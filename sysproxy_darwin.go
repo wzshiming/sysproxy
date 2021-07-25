@@ -205,7 +205,7 @@ func get(key string, inter string) (string, error) {
 }
 
 func getNetworkInterface() (string, error) {
-	buf, err := command("zsh", "-c", "networksetup -listnetworkserviceorder | grep -B 1 $(route -n get default | grep interface | awk '{print $2}')")
+	buf, err := command("sh", "-c", "networksetup -listnetworkserviceorder | grep -B 1 $(route -n get default | grep interface | awk '{print $2}')")
 	if err != nil {
 		return "", err
 	}
