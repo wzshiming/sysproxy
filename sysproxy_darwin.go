@@ -215,5 +215,9 @@ func getNetworkInterface() (string, error) {
 	if err != nil {
 		return "", err
 	}
-	return reg.FindStringSubmatch(device)[1], nil
+	match := reg.FindStringSubmatch(device)
+	if len(match) <= 1 {
+		return "", fmt.Errorf("unable to get network interface")
+	}
+	return match[1], nil
 }
