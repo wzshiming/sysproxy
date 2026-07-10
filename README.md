@@ -6,7 +6,6 @@ Set the proxy of the system
 [![Go Report Card](https://goreportcard.com/badge/github.com/wzshiming/sysproxy)](https://goreportcard.com/report/github.com/wzshiming/sysproxy)
 [![GoDoc](https://godoc.org/github.com/wzshiming/sysproxy?status.svg)](https://godoc.org/github.com/wzshiming/sysproxy)
 [![GitHub license](https://img.shields.io/github/license/wzshiming/sysproxy.svg)](https://github.com/wzshiming/sysproxy/blob/master/LICENSE)
-[![gocover.io](https://gocover.io/_badge/github.com/wzshiming/sysproxy)](https://gocover.io/github.com/wzshiming/sysproxy)
 
 ## License
 
