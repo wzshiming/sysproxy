@@ -2,8 +2,6 @@
 
 Set the proxy of the system
 
-[![Build Status](https://travis-ci.org/wzshiming/sysproxy.svg?branch=master)](https://travis-ci.org/wzshiming/sysproxy)
-[![Go Report Card](https://goreportcard.com/badge/github.com/wzshiming/sysproxy)](https://goreportcard.com/report/github.com/wzshiming/sysproxy)
 [![GoDoc](https://godoc.org/github.com/wzshiming/sysproxy?status.svg)](https://godoc.org/github.com/wzshiming/sysproxy)
 [![GitHub license](https://img.shields.io/github/license/wzshiming/sysproxy.svg)](https://github.com/wzshiming/sysproxy/blob/master/LICENSE)
 
